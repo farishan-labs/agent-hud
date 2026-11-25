@@ -3,10 +3,17 @@
   "version": "0.1.0",
   "description": "Floating 'agent mind' HUD for headed Playwright runs.",
   "main": "agent-hud.js",
-  "keywords": ["playwright", "agent", "debug", "hud"],
+  "exports": {
+    ".": "./agent-hud.js"
+  },
+  "files": ["agent-hud.js", "README.md"],
+  "keywords": ["playwright", "agent", "debug", "hud", "headed"],
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/farishan-labs/agent-hud.git"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
